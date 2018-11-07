@@ -10,6 +10,7 @@
 # @daily /var/lib/asterisk/bin/remove-old.sh 80 /var /var/spool/asterisk/monitor/ 1000 >> /var/log/asterisk/remove-old.log 2>&1
 # https://linux-freebsd.ru/linux/linux-pro4ee/skript-proverki-svobodnogo-diskovogo-prostranstva-v-linux/
 # https://www.linux.org.ru/forum/admin/11261088
+# Лучше вместо точки монтирования указать диск /dev/md0, это нужно например в том случаи если нужно контролировать корень.
 
 if [ "$#" -eq 4 ]
    then
